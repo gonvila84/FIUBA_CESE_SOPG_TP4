@@ -1,0 +1,73 @@
+---
+:source:
+  :path: test
+  :file: test_server.c
+:successes:
+- :test: 'test_CreateSocket_ReturnsSuccessIfOk '
+  :line: 26
+  :message: ''
+  :unity_test_time: 0
+- :test: 'test_CreateSocket_ReturnsFailureIfNotOk '
+  :line: 41
+  :message: ''
+  :unity_test_time: 0
+- :test: 'test_InetServerAcceptIncomingConnections_ReturnsSuccessIfAcceptedConnection '
+  :line: 56
+  :message: ''
+  :unity_test_time: 0
+- :test: 'test_InetServerAcceptIncomingConnections_ReturnsFailureIfFailedConnection '
+  :line: 69
+  :message: ''
+  :unity_test_time: 0
+- :test: test_ReadFromServerSocket_ReturnsFailureIfErrorOnSocketRead
+  :line: 82
+  :message: ''
+  :unity_test_time: 0
+- :test: test_ReadFromServerSocket_ReturnsNothingIfNoDataReceived
+  :line: 97
+  :message: ''
+  :unity_test_time: 0
+- :test: test_ReadFromServerSocket_ReturnsSucceesIfDataWasReceived
+  :line: 112
+  :message: ''
+  :unity_test_time: 0
+- :test: test_ConfigureServerSocket_ReturnsFailureIfPtonIsIncorrect
+  :line: 127
+  :message: ''
+  :unity_test_time: 0
+- :test: test_ConfigureServerSocket_ReturnsSuccessIfAllConditionsAreCorrect
+  :line: 142
+  :message: ''
+  :unity_test_time: 0
+- :test: test_ConfigureServerSocket_ReturnsFailureIfBindIsIncorrect
+  :line: 161
+  :message: ''
+  :unity_test_time: 0
+- :test: test_ConfigureServerSocket_ReturnsFailureIfListenIsIncorrect
+  :line: 180
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 11
+  :passed: 11
+  :failed: 0
+  :ignored: 0
+:stdout:
+- ERROR invalid server IP
+- 'listener: bind: Success'
+- 'Error while listening: Success'
+- "> Waiting for a new connection to arrive."
+- "> A connection was accepted (IP: 0.0.0.0)."
+- "> Waiting for a new connection to arrive."
+- "> A failure was detected when trying to accept an incoming connection."
+- "> The server is attempting to read from the socket."
+- "> FAILURE: Error while trying to read from the socket."
+- "> The server is attempting to read from the socket."
+- "> The server is attempting to read from the socket."
+- "> Read function received the string:  (100 bytes)"
+- "> The new socket was successfully bound to the IP address 127.0.0.1."
+- "> The new socket was successfully configured to listen on the IP address 127.0.0.1."
+- "> The new socket was successfully bound to the IP address 127.0.0.1."
+:time: 0.00100758299959125

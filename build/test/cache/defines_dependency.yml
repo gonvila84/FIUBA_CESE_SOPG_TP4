@@ -1,0 +1,15 @@
+---
+build/test/mocks/mock_errores.c:
+- TEST
+build/test/mocks/mock_sys/socket.c:
+- TEST
+build/test/mocks/mock_sys//socket.c:
+- TEST
+build/test/mocks/mock_stdio.c:
+- TEST
+src/tcpServer.c:
+- TEST
+build/test/mocks/mock_syssocket.c:
+- TEST
+build/test/mocks/mock_stdint.c:
+- TEST
